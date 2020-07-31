@@ -32,7 +32,8 @@ run below commands from the TestProject directory. This will install all the dep
 
 ## Running Tests
 to run the tests, use below command from the TestProject directory
- yarn test
+
+   yarn test
 
  please note the tests are currently desinged to run on mac only. Some changes will need to be done to run them on windows.
 
