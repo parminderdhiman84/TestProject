@@ -1,0 +1,22 @@
+{
+  "name": "testproject",
+  "version": "0.0.1",
+  "private": true,
+  "description": "dev qa experience",
+  "scripts": {
+    "test": "cucumber-js ./src/features/* -r ./src/step_definitions/ --tags \"@test\"  --format json:reports/cucumberOutput.json",
+    "report" : "./src/utility/generate-report.js --input ./reports/cucumberOutput.json --output ./reports/cucumber_report.html"
+  },
+  "author": "Parminder Singh",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "selenium-webdriver": "3.6.0",
+    "command-line-args": "^5.0.2",
+    "config": "^2.0.1",
+    "cucumber": "^5.0.2",
+    "cucumber-html-reporter": "^4.0.2",
+    "express-pino-logger": "^4.0.0",
+    "pino": "^5.11.1",
+    "dateformat": "3.0.3"
+  }
+}
